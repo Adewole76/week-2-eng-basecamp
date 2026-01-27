@@ -1,0 +1,8 @@
+.Sidebar-Navigation{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 76em;
+    left: 0;
+    background-color: black;
+}
