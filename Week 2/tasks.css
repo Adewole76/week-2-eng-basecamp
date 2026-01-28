@@ -1,0 +1,13 @@
+body{
+    height: 100vh;
+    position: relative;
+    padding-top: 6rem;
+    padding-left: 18rem;
+}
+.task-input{
+    width: 72%;
+    padding: 1em 0 1em 1em
+}
+.add-btn {
+    padding: 1em;
+}
