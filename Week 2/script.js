@@ -1,6 +1,7 @@
 const addBtn = document.querySelector(".add-btn");
 const taskNameInput = document.querySelector(".task-input");
 const taskContainer = document.querySelector(".task-container");
+const errorMessage = document.querySelector(".error-message");
 const tasksArray = [];
 const exampleObject = {
     name: "me", status: "active", index: 1
@@ -20,16 +21,17 @@ addBtn.addEventListener('click', function(){
   const retrieveTaskList = JSON.parse(storedTaskList);
   console.log(retrieveTaskList);
   
-  const taskItem =tasksArray.map(task => `<div class="task-div">
-          <p class="task-name">${task.name}</p>
-          <p>${task.status}</p>
-  
+  const taskItem =retrieveTaskList.map(task => `<div class="task-div">
+         <input type="checkbox"> <p class="task-name">${task.name}</p>
+          <p class ="task-status">${task.status}</p>
+          
   </div>`).join('');
   console.log(taskItem);
   taskContainer.innerHTML = taskItem;
-
+errorMessage.classList.add('hidden');
  }else{
-    console.log("write something in the task input")
+    console.log("write something in the task input");
+    errorMessage.classList.remove('hidden')
  }
 })
 

@@ -8,8 +8,21 @@ body{
     width: 72%;
     padding: 1em 0 1em 1em
 }
+.error-message{
+    color: red;
+}
+.hidden{
+    display: none;
+}
 .add-btn {
     padding: 1em;
+}
+.task-div{
+    width: 100%;
+    border: 1px solid black;
+}
+.task-div p {
+    margin: 0;
 }
 .task-name{
     color: red;
