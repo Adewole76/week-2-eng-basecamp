@@ -11,3 +11,6 @@ body{
 .add-btn {
     padding: 1em;
 }
+.task-name{
+    color: red;
+}
