@@ -20,7 +20,7 @@ addBtn.addEventListener('click', function(){
   const retrieveTaskList = JSON.parse(storedTaskList);
   console.log(retrieveTaskList);
   
-  const taskItem =tasksArray.map(task => `<div>
+  const taskItem =tasksArray.map(task => `<div class="task-div">
           <p class="task-name">${task.name}</p>
           <p>${task.status}</p>
   
