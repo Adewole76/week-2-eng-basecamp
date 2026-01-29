@@ -4,6 +4,9 @@ body{
     padding-top: 6rem;
     padding-left: 18rem;
 }
+.task-container{
+    margin-top: 1em;
+}
 .task-input{
     width: 72%;
     padding: 1em 0 1em 1em
@@ -18,12 +21,18 @@ body{
     padding: 1em;
 }
 .task-div{
-    width: 100%;
+    width: 90%;
     border: 1px solid black;
+    margin-top: 2em;
+    padding: 1em 0 1em 1em;
 }
-.task-div p {
-    margin: 0;
-}
+
 .task-name{
     color: red;
+    display: inline-block;
+    margin: 0;
+}
+.delete-icon{
+    width: 30px;
+    vertical-align: middle;
 }
