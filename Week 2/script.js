@@ -43,8 +43,13 @@ errorMessage.classList.add('hidden');
  }
 })
 taskContainer.addEventListener('click',function(event){
-    if (event.target.checked){
-        console.log('a checkbox was clicked')
+    if (event.target.classList.contains('status-check')){
+        event.target.closest('.task-div')
+        const nameOfTask = event.target.closest('.task-name')
+        const taskStatus = event.target.closest('.task-status');
+        nameOfTask.style.textDecoration = 'line-through'
+        taskStatus.textContent = 'done';
+        
     }else if(event.target.src){
         console.log('an image was clicked')
     }
