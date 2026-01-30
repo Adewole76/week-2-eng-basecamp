@@ -5,9 +5,19 @@
     right: 79em;
     left: 0;
     background-color: black;
-   
+}
+.logo{
+    color: white;
+}
+ul{
+    margin: 7em 0 0 0;
+    padding: 0;
+}
+ul a {
+ text-decoration: none;
 }
 ul li{
 list-style-type: none;
 color: white;
+padding: 1em 0 0 2em;
 }

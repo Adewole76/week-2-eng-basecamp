@@ -26,7 +26,10 @@ body{
     margin-top: 2em;
     padding: 1em 0 1em 1em;
 }
-
+.name-delete{
+    display: flex;
+    justify-content: space-between
+}
 .task-name{
     color: red;
     display: inline-block;
