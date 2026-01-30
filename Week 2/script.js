@@ -42,11 +42,12 @@ errorMessage.classList.add('hidden');
     errorMessage.classList.remove('hidden')
  }
 })
+//marking tasks as done
 taskContainer.addEventListener('click',function(event){
     if (event.target.classList.contains('status-check')){
-        event.target.closest('.task-div')
-        const nameOfTask = event.target.closest('.task-name')
-        const taskStatus = event.target.closest('.task-status');
+        const taskDiv = event.target.closest('.task-div');
+        const nameOfTask = taskDiv.querySelector('.task-name')
+        const taskStatus = taskDiv.querySelector('.task-status');
         nameOfTask.style.textDecoration = 'line-through'
         taskStatus.textContent = 'done';
         
