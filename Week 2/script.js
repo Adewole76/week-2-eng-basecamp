@@ -56,9 +56,12 @@ taskContainer.addEventListener('click',function(event){
         
     }else if(event.target.classList.contains('delete-icon')){
        const taskDiv = event.target.closest('.task-div');
-       console.log(taskDiv);
        const taskStatus = taskDiv.querySelector('.task-status');
-       taskStatus.textContent = 'deleted'
+       taskStatus.textContent = 'deleted';
+       console.log(taskContainer);
+       console.log(tasksArray);
+       const notStartedTasks = tasksArray.filter((task) => task.status === 'not started' );
+       console.log(notStartedTasks);
       
     }
 })
