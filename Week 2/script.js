@@ -46,15 +46,20 @@ errorMessage.classList.add('hidden');
 taskContainer.addEventListener('click',function(event){
     if (event.target.classList.contains('status-check')){
         const taskDiv = event.target.closest('.task-div');
+        const statusCheck = taskDiv.querySelector('.status-check')
         const nameOfTask = taskDiv.querySelector('.task-name')
         const taskStatus = taskDiv.querySelector('.task-status');
         nameOfTask.style.textDecoration = 'line-through'
         taskStatus.textContent = 'done';
+        statusCheck.checked = true;
+        statusCheck.disabled = true;
         
-    }else if(event.target.src){
-        console.log('an image was clicked')
+    }else if(event.target.classList.contains('delete-icon')){
+       const taskDiv = event.target.closest('.task-div');
+       console.log(taskDiv);
+       const taskStatus = taskDiv.querySelector('.task-status');
+       taskStatus.textContent = 'deleted'
+      
     }
 })
-// delete task
-// console.log(markAsDone);
 
